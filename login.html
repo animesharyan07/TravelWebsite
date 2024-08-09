@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Login </title>
+    <!-- <link rel="stylesheet" href="Css/style.css" /> -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet" />
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #4d75c5;
+            font-family: "Roboto", sans-serif;
+        }
+
+        .signup-box {
+            width: 380px;
+            height: 620px;
+            margin: auto;
+            background-color: rgb(196, 235, 245);
+            border-radius: 3px;
+        }
+
+        .login-box {
+            width: 360px;
+            height: 280px;
+            margin: auto;
+            margin-top: 50px;
+            border-radius: 3px;
+            background-color: white;
+        }
+
+        h1 {
+            text-align: center;
+            padding-top: 15px;
+        }
+
+        h4 {
+            text-align: center;
+        }
+
+        form {
+            width: 300px;
+            margin-left: 20px;
+        }
+
+        form label {
+            display: flex;
+            margin-top: 20px;
+            font-size: 18px;
+        }
+
+        form input {
+            width: 100%;
+            padding: 7px;
+            border: none;
+            border: 1px solid gray;
+            border-radius: 6px;
+            outline: none;
+        }
+
+        input[type="button"] {
+            width: 320px;
+            height: 35px;
+            margin-top: 20px;
+            border: none;
+            background-color: #49c1a2;
+            color: white;
+            font-size: 18px;
+        }
+
+        form button {
+            width: 320px;
+            height: 35px;
+            margin-top: 20px;
+            border: none;
+            background-color: #49c1a2;
+            color: white;
+            font-size: 18px;
+        }
+
+        p {
+            text-align: center;
+            padding-top: 20px;
+            font-size: 15px;
+        }
+
+        .para-2 {
+            text-align: center;
+            color: white;
+            font-size: 15px;
+            margin-top: -10px;
+        }
+
+        .para-2 a {
+            color: #60c63e;
+        }
+
+        .navbar {
+            background: rgb(95, 171, 209);
+            font-family: calibri;
+            padding-right: 15px;
+            padding-left: 15px;
+
+        }
+
+        .navdiv {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            text-decoration: none;
+        }
+
+        .logo {
+            font-size: 35px;
+            font-weight: 600;
+            color: white;
+        }
+
+        li {
+            list-style: none;
+            display: inline-block;
+        }
+
+        li a {
+            color: white;
+            list-style: none;
+            font-size: 18px;
+            font-weight: bold;
+            margin-right: 25px;
+            text-decoration: none;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            align-items: center;
+            margin-top: 400px;
+        }
+
+        .social-icons a {
+            color: #fff;
+            font-size: 24px;
+            margin-right: 20px;
+        }
+
+        footer p {
+            font-family: "Dongle-regular";
+            font-size: 1.4rem;
+        }
+
+        #toastbox {
+            position: absolute;
+            top: 10px;
+            left: 500px;
+            align-items: flex-end;
+            overflow: hidden;
+            flex-direction: column;
+            padding: 20px;
+            border-left: rgb(40, 231, 40);
+        }
+
+        .toast {
+            width: 250px;
+            height: 80px;
+            background-color: rgb(255, 255, 255);
+            font-weight: 500;
+            margin: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            display: flex;
+            font-size: 15px;
+
+            align-items: center;
+
+        }
+
+        .toast i {
+            margin: 0 20px;
+            font-size: 25px;
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+        <nav class="navbar">
+            <div class="navdiv">
+                <div class="logo">TravelWithMe </div>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Package</a></li>
+                    <li><a href="#">Membership</a></li>
+
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+    <div id="toastbox"></div>
+    <div class="login-box">
+        <h1>Login</h1>
+        <form>
+            <label>Email</label>
+            <input type="email" placeholder="" checked>
+            <label>Password</label>
+            <input type="password" placeholder="" checked>
+            <a href="indexNew.html" target="_blank"><input type="button" name="Login" id="" value="Login"></a>
+        </form>
+    </div>
+    <p class="para-2">
+        Not have an account? <a href="signup.html">Sign Up Here</a>
+    </p>
+    <footer>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p>&copy; 2023 Your Travel Website. All Rights Reserved.</p>
+    </footer>
+    <script src="https://kit.fontawesome.com/6558443b63.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/77dcaaae55.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

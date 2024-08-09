@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payment</title>
+    <link rel="stylesheet" href="payment.css">
+
+</head>
+
+<body>
+    <div id="alertBox" class="alert">
+        <span class="closebtn" onclick="closeAlert()">&times;</span>
+        <strong>Alert:</strong> This is an alert message. Click the close button to shut down the page.
+    </div>
+    <header>
+
+        <nav class="navbar">
+            <div class="navdiv">
+                <div class="logo">TravelWithMe </div>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Package</a></li>
+                    <li><a href="#">Membership</a></li>
+                    <!-- <button>Login</button>
+                    <button>SignUp</button> -->
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+    <div id="toastbox"></div>
+    <div class="container">
+
+        <form action="">
+
+            <div class="row">
+
+                <div class="col">
+
+                    <h3 class="title">billing address</h3>
+
+                    <div class="inputBox">
+                        <span>full name :</span>
+                        <input type="text" placeholder="Enter Your name">
+                    </div>
+                    <div class="inputBox">
+                        <span>email :</span>
+                        <input type="email" placeholder="example@example.com">
+                    </div>
+                    <div class="inputBox">
+                        <span>address :</span>
+                        <input type="text" placeholder="Enter Address">
+                    </div>
+                    <div class="inputBox">
+                        <span>city :</span>
+                        <input type="text" placeholder="Enter city">
+                    </div>
+
+                    <div class="flex">
+                        <div class="inputBox">
+                            <span>state :</span>
+                            <input type="text" placeholder="Enter country">
+                        </div>
+                        <div class="inputBox">
+                            <span>Pin code :</span>
+                            <input type="text" placeholder="Enter Pin code">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col">
+
+                    <h3 class="title">payment</h3>
+
+                    <div class="inputBox">
+                        <span>cards accepted :</span>
+                        <img src="images/card_img.png" alt="">
+                    </div>
+                    <div class="inputBox">
+                        <span>Name on card :</span>
+                        <input type="text" placeholder="">
+                    </div>
+                    <div class="inputBox">
+                        <span> Card number :</span>
+                        <input type="number" placeholder="">
+                    </div>
+                    <div class="inputBox">
+                        <span>Expiry month :</span>
+                        <input type="text" placeholder="">
+                    </div>
+
+                    <div class="flex">
+                        <div class="inputBox">
+                            <span>Expiry year :</span>
+                            <input type="number" placeholder="">
+                        </div>
+                        <div class="inputBox">
+                            <span>CVV :</span>
+                            <input type="text" placeholder="">
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <button onclick="Done()">Proceed</button>
+
+
+        </form>
+
+    </div>
+    <footer>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p>&copy; 2023 Your Travel Website. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/6558443b63.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/77dcaaae55.js" crossorigin="anonymous"></script>
+
+
+    <script>
+
+        function showAlert() {
+            var alertBox = document.getElementById("alertBox");
+            alertBox.style.display = "block";
+        }
+
+        function closeAlert() {
+            var alertBox = document.getElementById("alertBox");
+            alertBox.style.display = "none";
+            // Close the page after a delay (e.g., 1 second)
+            setTimeout(function () {
+                window.close();
+            }, 4000);
+
+
+        }
+
+        function Done() {
+            alert("Payment Done Sccesfully");
+            window.close();
+        }
+    </script>
+</body>
+
+</html>
